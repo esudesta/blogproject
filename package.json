@@ -1,0 +1,30 @@
+{
+  "name": "bolgproject",
+  "version": "1.0.0",
+  "description": "blog project using nodejs and mongodb atlas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startDev":"nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "esudesta5@gmail.com"
+  },
+  "keywords": [
+    "node",
+    "blog",
+    "mongos"
+  ],
+  "author": "esral",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
