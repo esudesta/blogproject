@@ -15,4 +15,4 @@ app.use("/static",express.static("public"))
 
 app.use('/',blogRoute)
 
-app.listen(process.env.PORT,err=>console.log("server running on port :" + process.env.PORT))
+app.listen(process.env.PORT,"0.0.0.0",err=>console.log("server running on port :" + process.env.PORT))
