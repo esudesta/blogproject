@@ -1,5 +1,5 @@
 {
-  "name": "bolgproject",
+  "name": "blogproject",
   "version": "1.0.0",
   "description": "blog project using nodejs and mongodb atlas",
   "main": "server.js",
