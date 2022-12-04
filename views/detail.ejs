@@ -1,9 +1,8 @@
 <%- include("./partials/header")  %>
     <body>
         <h1>Blogs</h1>
-        <% for(var i=0; i < result.length ; i++) {%>
-            <p><%= result[i].title %></p>            
-        <%}%>
+            <h3><%= result.title %></h3>            
+            <p><%= result.body %></p>
         <script src="static/js/script.js"></script>
     </body>
 
