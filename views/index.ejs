@@ -2,8 +2,9 @@
     <body>
         <h1>Blogs</h1>
         <% for(var i=0; i < result.length ; i++) {%>
-            <p><%= result[i].title %></p>            
-        <%}%>
+            <p><a href="blog/<%= result[i]._id %>"><%= result[i].title %></a></p>            
+        
+            <%}%>
         <script src="static/js/script.js"></script>
     </body>
 

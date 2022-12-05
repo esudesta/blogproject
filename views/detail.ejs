@@ -1,10 +1,14 @@
 <%- include("./partials/header")  %>
-    <body>
-        <h1>Blogs</h1>
-            <h3><%= result.title %></h3>            
-            <p><%= result.body %></p>
-        <script src="static/js/script.js"></script>
-    </body>
 
-    <%- include("./partials/footer")%>
+<body>
+    <h1>Blogs</h1>
+    <h3><%= result.title %></h3>
+    <p><%= result.body %></p>
+    <button id="delete" data-doc="<%= result._id %>">Delete</button>
+    <script src="/static/js/script.js" X-Content-Type-Options: nosniff ></script>
+    <script src="/static/js/deleteBlog.js" X-Content-Type-Options: nosniff ></script>
+</body>
+
+<%- include("./partials/footer")%>
+
 </html>

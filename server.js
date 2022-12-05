@@ -16,7 +16,7 @@ app.use("/",(req,res,next)=>{
     console.log(req.url);
     next()
 })
-app.use("/static",express.static("public"))
+app.use("/static/",express.static("public"))
 
 app.use('/',blogRoute)
 

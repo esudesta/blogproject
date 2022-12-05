@@ -30,9 +30,19 @@ function post_add_blog(req,res){
     });
 }
 
+function delete_blog(req,res){
+    Blog.findByIdAndDelete(req.params.id).then(data=>{
+        res.send({redirect:"/"})
+        console.log("blog deleted");
+    }).catch(err=>{
+        console.log(err);
+    })
+}
+
 module.exports = {
     get_blog,
     all_blogs,
     post_add_blog,
-    get_add_blog
+    get_add_blog,
+    delete_blog
 }
